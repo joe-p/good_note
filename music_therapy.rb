@@ -8,7 +8,7 @@ class MusicTherapy < Roda
   plugin :public
   plugin :render
 
-  HOSTNAME = "http://192.168.1.202:9292"
+  HOSTNAME = "http://localhost:9292"
   
   SPOTIFY_CONFIG = YAML.load(File.read("spotify.yml")).freeze
   CLIENT_ID = SPOTIFY_CONFIG["client_id"]
