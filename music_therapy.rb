@@ -1,6 +1,5 @@
 require "roda"
 require 'rspotify'
-require 'yaml'
 
 class MusicTherapy < Roda
 
@@ -10,9 +9,8 @@ class MusicTherapy < Roda
 
   HOSTNAME = "http://192.168.1.202:9292"
   
-  SPOTIFY_CONFIG = YAML.load(File.read("spotify.yml")).freeze
-  CLIENT_ID = SPOTIFY_CONFIG["client_id"]
-  CLIENT_SECRET = SPOTIFY_CONFIG["client_secret"]
+  CLIENT_ID = ENV["CLIENT_ID"]
+  CLIENT_SECRET = ENV["CLIENT_SECRET"]
 
   RSpotify.authenticate(CLIENT_ID, CLIENT_SECRET)
 
