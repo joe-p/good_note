@@ -1,5 +1,6 @@
 require "roda"
 require 'rspotify'
+require 'cgi'
 
 class MusicTherapy < Roda
 
@@ -27,7 +28,7 @@ class MusicTherapy < Roda
         "response_type=code&" +
         "state=test_state&" +
         "redirect_uri=" +
-        URI.escape("#{HOSTNAME}/spotify/auth/callback")
+        CGI.escape("#{HOSTNAME}/spotify/auth/callback")
       )
     end
 
