@@ -7,7 +7,7 @@ class MusicTherapy < Roda
   plugin :public
   plugin :render
 
-  HOSTNAME = "http://192.168.1.202:9292"
+  HOSTNAME = ENV["RACK_HOST"] ? ENV["RACK_HOST"] : "http://localhost:9292"
   
   CLIENT_ID = ENV["CLIENT_ID"]
   CLIENT_SECRET = ENV["CLIENT_SECRET"]
