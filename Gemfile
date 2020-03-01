@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 ruby "2.6.5"
 
+gem "sqlite3"
+gem "sequel"
 gem "rspotify"
 gem "rerun"
 gem "roda"

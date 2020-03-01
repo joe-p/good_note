@@ -1,10 +1,11 @@
 require "roda"
 require 'rspotify'
 require 'cgi'
+require_relative 'db'
 
 class MusicTherapy < Roda
 
-  plugin :json
+  plugin :json, classes: [Array, Hash, Sequel::Model]
   plugin :public
   plugin :render
 
@@ -18,6 +19,16 @@ class MusicTherapy < Roda
   route do |r|
     # Allows static files (ie. favicon.ico) to be found in /public
     r.public
+
+    r.is "users" do
+      r.post do
+        User.create_from_hash r.params
+      end
+
+      r.get do
+        User.all
+      end
+    end
 
     r.is "spotify/auth" do
     
