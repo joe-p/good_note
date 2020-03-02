@@ -53,6 +53,8 @@ GEM
       addressable (~> 2.5.2)
       omniauth-oauth2 (~> 1.5.0)
       rest-client (~> 2.0.2)
+    sequel (5.30.0)
+    sqlite3 (1.4.2)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -66,9 +68,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  faraday
   rerun
   roda
   rspotify
+  sequel
+  sqlite3
   thin
   tilt
 
