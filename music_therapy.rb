@@ -2,6 +2,7 @@ require "roda"
 require 'rspotify'
 require 'cgi'
 require_relative 'db'
+require 'faraday'
 
 class MusicTherapy < Roda
 
@@ -10,7 +11,7 @@ class MusicTherapy < Roda
   plugin :render
 
   HOSTNAME = ENV["RACK_HOST"] ? ENV["RACK_HOST"] : "http://localhost:9292"
-  
+
   CLIENT_ID = ENV["CLIENT_ID"]
   CLIENT_SECRET = ENV["CLIENT_SECRET"]
 
@@ -22,7 +23,7 @@ class MusicTherapy < Roda
 
     r.is "users" do
       r.post do
-        User.create_from_hash r.params
+        User.create r.params
       end
 
       r.get do
@@ -31,7 +32,7 @@ class MusicTherapy < Roda
     end
 
     r.is "spotify/auth" do
-    
+
       # Bring user to Spotify login page
       r.redirect (
         "https://accounts.spotify.com/authorize?" +
@@ -45,16 +46,9 @@ class MusicTherapy < Roda
 
     r.is "spotify/auth/callback" do 
 
-      # The authorization was successful
       if r.params["code"]
-        auth_string = "<p>The auth code is: #{r.params["code"]}</p>"
-
-        if r.params["state"] 
-          auth_string += "<p>The state is: #{r.params["state"]}</p>"
-        else
-          auth_string += "<p>There was no state parameter</p>"
-        end
-
+        User.authenticate_via_spotify r.params["code"] 
+      
       # Authorization failed (redirected to callback with error parameter)
       elsif r.params["error"]
         "Authorization failed due to the following error: #{r.params["error"]}"
@@ -62,9 +56,9 @@ class MusicTherapy < Roda
       # Authorization failed (redirect did not contain code or error)
       else
         "Authorization failed due to an unknwon reason (unknown parameters)"
-      
+
       end
-    
+
     end
 
     r.on "spotify/api" do
