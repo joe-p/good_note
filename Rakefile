@@ -5,7 +5,7 @@ namespace :db do
     Sequel.extension :migration
     version = args[:version].to_i if args[:version]
     Sequel.sqlite("db/music_therapy.db") do |db|
-      Sequel::Migrator.run(db, "db/migrations", target: version)
+      Sequel::Migrator.run(db, "migrate", target: version)
     end
   end
 end
