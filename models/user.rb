@@ -3,25 +3,30 @@ class User < Sequel::Model(DB[:users])
 
   class << self
     def authenticate_via_spotify(code)
-      post_body = {
-        "grant_type" => "authorization_code",
-        "code" => code,
-        "redirect_uri" => "#{MusicTherapy::HOSTNAME}/spotify/auth/callback",
-        "client_id" => MusicTherapy::CLIENT_ID,
-        "client_secret" => MusicTherapy::CLIENT_SECRET
-      }
+      b64 = Base64.strict_encode64("#{MusicTherapy::CLIENT_ID}:#{MusicTherapy::CLIENT_SECRET}")
+      
+      api_conn = Faraday.new("https://accounts.spotify.com/api/")
+ 
+      token_res = api_conn.post("token") do |req|
+        req.body = {
+          "grant_type" => "authorization_code",
+          "code" => code,
+          "redirect_uri" => "#{MusicTherapy::HOSTNAME}/spotify/auth/callback"
+        }
 
-      conn = Faraday.new
-      token_res = conn.post('https://accounts.spotify.com/api/token', post_body)
+        req.headers = {"Authorization" => "Basic #{b64}"}
+      end
 
-      token = JSON.parse(token_res.body)["access_token"]
+      auth_info = JSON.parse(token_res.body)
+      
+      token = auth_info["access_token"]
 
-      me_res = conn.get('https://api.spotify.com/v1/me', nil, {"Authorization" => "Bearer #{token}"})
-
+      me_res = Faraday.new.get('https://api.spotify.com/v1/me', nil, {"Authorization" => "Bearer #{token}"})
       me_hash = JSON.parse(me_res.body)
 
-      User.find_or_create spotify_id: me_hash["id"] 
+      [ User.find_or_create( spotify_id: me_hash["id"] ), auth_info ]
     end
 
   end
+
 end
