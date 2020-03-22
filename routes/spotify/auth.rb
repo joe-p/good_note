@@ -52,14 +52,16 @@ class MusicTherapy < Roda
 
       api_conn = Faraday.new("https://accounts.spotify.com/api/")
 
-      session["auth_info"] = api_conn.post("token") do |req|
+      puts session["auth_info"]
+      auth_body = api_conn.post("token") do |req|
         req.headers = {"Authorization" => "Basic #{b64}"}
         req.body = {
           "grant_type" => "refresh_token", 
           "refresh_token" => session["auth_info"]["refresh_token"]
         }
-      end
+      end.body
 
+      session["auth_info"]["access_token"] = JSON.parse(auth_body)["access_token"]
       r.persist_session({}, session)
 
       r.redirect("/user/#{session["user_id"]}")
