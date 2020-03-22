@@ -1,4 +1,5 @@
 require_relative 'spotify/auth'
+require_relative 'spotify/analyze'
 
 class MusicTherapy < Roda
   plugin :hash_routes
