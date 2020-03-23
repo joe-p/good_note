@@ -5,6 +5,7 @@ require 'faraday'
 require_relative 'db'
 require_relative 'models'
 require_relative 'routes'
+require_relative 'patches'
 
 class MusicTherapy < Roda
 

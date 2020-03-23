@@ -1,12 +1,7 @@
 require 'rspotify'
 
-class Object
-  def instance_variables_hash
-    Hash[instance_variables.map { |name| [name, instance_variable_get(name)] } ]
-  end
-end
-
 class MusicTherapy < Roda
+
   plugin :hash_routes
 
   RSpotify::authenticate ENV["CLIENT_ID"], ENV["CLIENT_SECRET"]
