@@ -3,7 +3,7 @@ class MusicTherapy < Roda
 
   hash_branch "user" do |r|
     r.on Integer do |user_id|
-      User[user_id].rspotify_user
+      User[user_id]
     end
   end 
 end
