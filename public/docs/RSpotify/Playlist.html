@@ -1,0 +1,3359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: RSpotify::Playlist
+  
+    &mdash; Documentation by YARD 0.9.24
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "RSpotify::Playlist";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span>
+     &raquo; 
+    <span class="title">Playlist</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: RSpotify::Playlist
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="Base.html" title="RSpotify::Base (class)">Base</a></span></span>
+      
+        <ul class="fullTree">
+          <li><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="RSpotify::Base (class)">Base</a></span></li>
+          
+            <li class="next">RSpotify::Playlist</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb<span class="defines">,<br />
+  patches/rspotify.rb</span>
+</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+  <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#collaborative-instance_method" title="#collaborative (instance method)">#<strong>collaborative</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>true if the owner allows other users to modify the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#description-instance_method" title="#description (instance method)">#<strong>description</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The playlist description.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#followers-instance_method" title="#followers (instance method)">#<strong>followers</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Information about the followers of the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#images-instance_method" title="#images (instance method)">#<strong>images</strong>  &#x21d2; Array&lt;Hash&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Images for the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#name-instance_method" title="#name (instance method)">#<strong>name</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The name of the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#owner-instance_method" title="#owner (instance method)">#<strong>owner</strong>  &#x21d2; User </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The user who owns the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#public-instance_method" title="#public (instance method)">#<strong>public</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>true if the playlist is not marked as secret.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#snapshot_id-instance_method" title="#snapshot_id (instance method)">#<strong>snapshot_id</strong>  &#x21d2; String </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The version identifier for the current playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#total-instance_method" title="#total (instance method)">#<strong>total</strong>  &#x21d2; Integer </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The total number of tracks in the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tracks_added_at-instance_method" title="#tracks_added_at (instance method)">#<strong>tracks_added_at</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A hash containing the date and time each track was added to the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tracks_added_by-instance_method" title="#tracks_added_by (instance method)">#<strong>tracks_added_by</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A hash containing the user that added each track to the playlist.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tracks_is_local-instance_method" title="#tracks_is_local (instance method)">#<strong>tracks_is_local</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A hash showing whether each track is local or not.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+  
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="Base.html" title="RSpotify::Base (class)">Base</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Base.html#external_urls-instance_method" title="RSpotify::Base#external_urls (method)">#external_urls</a></span>, <span class='object_link'><a href="Base.html#href-instance_method" title="RSpotify::Base#href (method)">#href</a></span>, <span class='object_link'><a href="Base.html#id-instance_method" title="RSpotify::Base#id (method)">#id</a></span>, <span class='object_link'><a href="Base.html#type-instance_method" title="RSpotify::Base#type (method)">#type</a></span>, <span class='object_link'><a href="Base.html#uri-instance_method" title="RSpotify::Base#uri (method)">#uri</a></span></p>
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#browse_featured-class_method" title="browse_featured (class method)">.<strong>browse_featured</strong>(limit: 20, offset: 0, **options)  &#x21d2; Array&lt;Playlist&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Get a list of Spotify featured playlists (shown, for example, on a Spotify player’s “Browse” tab).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find-class_method" title="find (class method)">.<strong>find</strong>(user_id, id, market: nil)  &#x21d2; Playlist </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns Playlist object with user_id and id provided.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#find_by_id-class_method" title="find_by_id (class method)">.<strong>find_by_id</strong>(id, market: nil)  &#x21d2; Playlist </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns Playlist object with id provided.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#search-class_method" title="search (class method)">.<strong>search</strong>(query, limit: 20, offset: 0)  &#x21d2; Array&lt;Playlist&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns array of Playlist objects matching the query.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#add_tracks!-instance_method" title="#add_tracks! (instance method)">#<strong>add_tracks!</strong>(tracks, position: nil)  &#x21d2; Array&lt;Track&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Adds one or more tracks to a playlist in user&#39;s Spotify account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#change_details!-instance_method" title="#change_details! (instance method)">#<strong>change_details!</strong>(**data)  &#x21d2; Playlist </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Change name and public/private state of playlist in user&#39;s Spotify account.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#complete!-instance_method" title="#complete! (instance method)">#<strong>complete!</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>When an object is obtained undirectly, Spotify usually returns a simplified version of it.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(options = {})  &#x21d2; Playlist </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Playlist.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_followed_by%3F-instance_method" title="#is_followed_by? (instance method)">#<strong>is_followed_by?</strong>(users)  &#x21d2; Array&lt;Boolean&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Check if one or more Spotify users are following a specified playlist.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#remove_tracks!-instance_method" title="#remove_tracks! (instance method)">#<strong>remove_tracks!</strong>(tracks, snapshot_id: nil)  &#x21d2; Playlist </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Remove one or more tracks from a user’s playlist.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reorder_tracks!-instance_method" title="#reorder_tracks! (instance method)">#<strong>reorder_tracks!</strong>(range_start, insert_before, **options)  &#x21d2; Playlist </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Reorder a track or a group of tracks in a playlist.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#replace_image!-instance_method" title="#replace_image! (instance method)">#<strong>replace_image!</strong>(image, content_type)  &#x21d2; NilClass </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Replace the image used to represent a specific playlist.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#replace_tracks!-instance_method" title="#replace_tracks! (instance method)">#<strong>replace_tracks!</strong>(tracks)  &#x21d2; Array&lt;Track&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Replace all the tracks in a playlist, overwriting its existing tracks.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tracks-instance_method" title="#tracks (instance method)">#<strong>tracks</strong>(limit: 100, offset: 0, market: nil)  &#x21d2; Array&lt;Track&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns array of tracks from the playlist.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Base.html" title="RSpotify::Base (class)">Base</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Base.html#embed-instance_method" title="RSpotify::Base#embed (method)">#embed</a></span>, <span class='object_link'><a href="Base.html#method_missing-instance_method" title="RSpotify::Base#method_missing (method)">#method_missing</a></span>, <span class='object_link'><a href="Base.html#respond_to%3F-instance_method" title="RSpotify::Base#respond_to? (method)">#respond_to?</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    #<strong>initialize</strong>(options = {})  &#x21d2; <tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of Playlist.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 96</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='ivar'>@collaborative</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>collaborative</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@description</span>   <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>description</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@followers</span>     <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>followers</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@images</span>        <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>images</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@name</span>          <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@public</span>        <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>public</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@snapshot_id</span>   <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>snapshot_id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@total</span>         <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tracks</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>total</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+
+  <span class='ivar'>@owner</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>owner</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+    <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="User.html#initialize-instance_method" title="RSpotify::User#initialize (method)">new</a></span></span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>owner</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_tracks'>tracks</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tracks</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>items</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tracks</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_select!'>select!</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_t'>t</span><span class='op'>|</span> <span class='id identifier rubyid_t'>t</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>track</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='id identifier rubyid_tracks'>tracks</span>
+
+  <span class='ivar'>@tracks_cache</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_tracks'>tracks</span>
+    <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_t'>t</span><span class='op'>|</span> <span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Track.html#initialize-instance_method" title="RSpotify::Track#initialize (method)">new</a></span></span> <span class='id identifier rubyid_t'>t</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>track</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@tracks_added_at</span> <span class='op'>=</span> <span class='id identifier rubyid_hash_for'>hash_for</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>added_at</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_added_at'>added_at</span><span class='op'>|</span>
+    <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_added_at'>added_at</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@tracks_added_by</span> <span class='op'>=</span> <span class='id identifier rubyid_hash_for'>hash_for</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>added_by</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_added_by'>added_by</span><span class='op'>|</span>
+    <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="User.html#initialize-instance_method" title="RSpotify::User#initialize (method)">new</a></span></span> <span class='id identifier rubyid_added_by'>added_by</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@tracks_is_local</span> <span class='op'>=</span> <span class='id identifier rubyid_hash_for'>hash_for</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>is_local</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_is_local'>is_local</span><span class='op'>|</span>
+    <span class='id identifier rubyid_is_local'>is_local</span>
+  <span class='kw'>end</span>
+
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+
+  <span class='ivar'>@path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>users/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>@id</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>?</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span>
+  <span class='ivar'>@path</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='ivar'>@href</span> <span class='op'>=~</span> <span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\/starred$</span><span class='regexp_end'>/</span></span> <span class='op'>?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>starred</span><span class='tstring_end'>&#39;</span></span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>playlists/</span><span class='embexpr_beg'>#{</span><span class='ivar'>@id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice super">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+      in the class <span class='object_link'><a href="Base.html#method_missing-instance_method" title="RSpotify::Base#method_missing (method)">RSpotify::Base</a></span>
+    
+  </p>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="collaborative=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="collaborative-instance_method">
+  
+    #<strong>collaborative</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>true if the owner allows other users to modify the playlist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of collaborative</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_collaborative'>collaborative</span>
+  <span class='ivar'>@collaborative</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="description=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="description-instance_method">
+  
+    #<strong>description</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The playlist description</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of description</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_description'>description</span>
+  <span class='ivar'>@description</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="followers=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="followers-instance_method">
+  
+    #<strong>followers</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Information about the followers of the playlist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of followers</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_followers'>followers</span>
+  <span class='ivar'>@followers</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="images=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="images-instance_method">
+  
+    #<strong>images</strong>  &#x21d2; <tt>Array&lt;Hash&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Images for the playlist. The array may be empty or contain up to three images. The images are returned by size in descending order. If returned, the source URL for the image is temporary and will expire in less than one day.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Hash&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of images</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_images'>images</span>
+  <span class='ivar'>@images</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="name=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="name-instance_method">
+  
+    #<strong>name</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The name of the playlist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of name</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_name'>name</span>
+  <span class='ivar'>@name</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="owner=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="owner-instance_method">
+  
+    #<strong>owner</strong>  &#x21d2; <tt><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The user who owns the playlist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of owner</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_owner'>owner</span>
+  <span class='ivar'>@owner</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="public=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="public-instance_method">
+  
+    #<strong>public</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>true if the playlist is not marked as secret</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of public</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_public'>public</span>
+  <span class='ivar'>@public</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="snapshot_id=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="snapshot_id-instance_method">
+  
+    #<strong>snapshot_id</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The version identifier for the current playlist. This attribute gets updated every time the playlist changes and can be supplied in other requests to target a specific playlist version</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of snapshot_id</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_snapshot_id'>snapshot_id</span>
+  <span class='ivar'>@snapshot_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="total=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="total-instance_method">
+  
+    #<strong>total</strong>  &#x21d2; <tt>Integer</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The total number of tracks in the playlist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of total</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_total'>total</span>
+  <span class='ivar'>@total</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="tracks_added_at=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="tracks_added_at-instance_method">
+  
+    #<strong>tracks_added_at</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash containing the date and time each track was added to the playlist. Note: the hash is updated only when <span class='object_link'><a href="#tracks-instance_method" title="RSpotify::Playlist#tracks (method)">#tracks</a></span> is used.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of tracks_added_at</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tracks_added_at'>tracks_added_at</span>
+  <span class='ivar'>@tracks_added_at</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="tracks_added_by=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="tracks_added_by-instance_method">
+  
+    #<strong>tracks_added_by</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash containing the user that added each track to the playlist. Note: the hash is updated only when <span class='object_link'><a href="#tracks-instance_method" title="RSpotify::Playlist#tracks (method)">#tracks</a></span> is used.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of tracks_added_by</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tracks_added_by'>tracks_added_by</span>
+  <span class='ivar'>@tracks_added_by</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="tracks_is_local=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="tracks_is_local-instance_method">
+  
+    #<strong>tracks_is_local</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash showing whether each track is local or not. Note: the hash is updated only when <span class='object_link'><a href="#tracks-instance_method" title="RSpotify::Playlist#tracks (method)">#tracks</a></span> is used.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the current value of tracks_is_local</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 15</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tracks_is_local'>tracks_is_local</span>
+  <span class='ivar'>@tracks_is_local</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="browse_featured-class_method">
+  
+    .<strong>browse_featured</strong>(limit: 20, offset: 0, **options)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Get a list of Spotify featured playlists (shown, for example, on a Spotify player’s “Browse” tab).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlists'>playlists</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_browse_featured'>browse_featured</span>
+<span class='id identifier rubyid_playlists'>playlists</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_browse_featured'>browse_featured</span><span class='lparen'>(</span><span class='label'>locale:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>es_MX</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>10</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlists'>playlists</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_browse_featured'>browse_featured</span><span class='lparen'>(</span><span class='label'>country:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>US</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>timestamp:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>2014-10-23T09:00:00</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>limit</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>20</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Maximum number of playlists to return. Maximum: 50. Default: 20.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>offset</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The index of the first playlist to return. Use with limit to get the next set of playlists. Default: 0.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>country</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. A country: an <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_parent" title="ISO 3166-1 alpha-2 country code">ISO 3166-1 alpha-2 country code</a>. Provide this parameter if you want the list of returned playlists to be relevant to a particular country. If omitted, the returned playlists will be relevant to all countries.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>locale</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. The desired language, consisting of a lowercase <a href="http://en.wikipedia.org/wiki/ISO_639" target="_parent" title="ISO 639 language code">ISO 639 language code</a> and an uppercase <a href="http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_parent" title="ISO 3166-1 alpha-2 country code">ISO 3166-1 alpha-2 country code</a>, joined by an underscore. For details access <a href="https://developer.spotify.com/web-api/get-list-featured-playlists" target="_parent" title="/ here">/ here</a> and look for the locale parameter description.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>timestamp</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. A timestamp in <a href="http://en.wikipedia.org/wiki/ISO_8601" target="_parent" title="ISO 8601">ISO 8601</a> format: yyyy-MM-ddTHH:mm:ss. Use this parameter to specify the user&#39;s local time to get results tailored for that specific date and time in the day. If not provided, the response defaults to the current UTC time. Example: “2014-10-23T09:00:00” for a user whose local time is 9AM.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 30</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_browse_featured'>browse_featured</span><span class='lparen'>(</span><span class='label'>limit:</span> <span class='int'>20</span><span class='comma'>,</span> <span class='label'>offset:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>browse/featured-playlists?limit=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_limit'>limit</span><span class='embexpr_end'>}</span><span class='tstring_content'>&amp;offset=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_offset'>offset</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_option'>option</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_url'>url</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&amp;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_option'>option</span><span class='embexpr_end'>}</span><span class='tstring_content'>=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_value'>value</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_response'>response</span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span>
+  <span class='id identifier rubyid_response'>response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>playlists</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>items</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_i'>i</span><span class='op'>|</span> <span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="RSpotify::Playlist#initialize (method)">new</a></span></span> <span class='id identifier rubyid_i'>i</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find-class_method">
+  
+    .<strong>find</strong>(user_id, id, market: nil)  &#x21d2; <tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns Playlist object with user_id and id provided. If id is “starred”, returns starred playlist from user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wizzler</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>00wHcTN0zQiun4xri9pmvX</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='comment'>#=&gt; RSpotify::Playlist
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>  <span class='comment'>#=&gt; &quot;Movie Soundtrack Masterpieces&quot;</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>market</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. An <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_parent" title="ISO 3166-1 alpha-2 country code">ISO 3166-1 alpha-2 country code</a>. Provide this parameter if you want to apply Track Relinking</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54
+55
+56
+57
+58
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='comma'>,</span> <span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>market:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>users/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user_id'>user_id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>&lt;&lt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span> <span class='op'>==</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>starred</span><span class='tstring_end'>&#39;</span></span> <span class='op'>?</span> <span class='id identifier rubyid_id'>id</span> <span class='op'>:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>playlists/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?market=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_market'>market</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_market'>market</span>
+
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_resolve_auth_request'><span class='object_link'><a href="../RSpotify.html#resolve_auth_request-class_method" title="RSpotify.resolve_auth_request (method)">resolve_auth_request</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_user_id'>user_id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_response'>response</span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span>
+  <span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="RSpotify::Playlist#initialize (method)">new</a></span></span> <span class='id identifier rubyid_response'>response</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="find_by_id-class_method">
+  
+    .<strong>find_by_id</strong>(id, market: nil)  &#x21d2; <tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns Playlist object with id provided.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find_by_id'>find_by_id</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>00wHcTN0zQiun4xri9pmvX</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span> <span class='comment'>#=&gt; RSpotify::Playlist
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>  <span class='comment'>#=&gt; &quot;Movie Soundtrack Masterpieces&quot;</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>market</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. An <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_parent" title="ISO 3166-1 alpha-2 country code">ISO 3166-1 alpha-2 country code</a>. Provide this parameter if you want to apply Track Relinking</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74
+75
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 72</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_find_by_id'>find_by_id</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>market:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>playlists/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>?market=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_market'>market</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_market'>market</span>
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_resolve_auth_request'><span class='object_link'><a href="../RSpotify.html#resolve_auth_request-class_method" title="RSpotify.resolve_auth_request (method)">resolve_auth_request</a></span></span><span class='lparen'>(</span><span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_response'>response</span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span>
+  <span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="#initialize-instance_method" title="RSpotify::Playlist#initialize (method)">new</a></span></span> <span class='id identifier rubyid_response'>response</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="search-class_method">
+  
+    .<strong>search</strong>(query, limit: 20, offset: 0)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns array of Playlist objects matching the query. It&#39;s also possible to find the total number of search results for the query</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlists'>playlists</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Indie</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlists'>playlists</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Indie</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>10</span><span class='rparen'>)</span>
+
+<span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Indie</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_total'>total</span> <span class='comment'>#=&gt; 14653</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>query</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The search query&#39;s keywords. See the q description in <a href="https://developer.spotify.com/web-api/search-item" target="_parent" title="here">here</a> for details.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>limit</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>20</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Maximum number of playlists to return. Maximum: 50. Default: 20.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>offset</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The index of the first playlist to return. Use with limit to get the next set of playlists. Default: 0.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+92
+93
+94</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 92</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_search'>search</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>20</span><span class='comma'>,</span> <span class='label'>offset:</span> <span class='int'>0</span><span class='rparen'>)</span>
+  <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_query'>query</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>playlist</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='id identifier rubyid_limit'>limit</span><span class='comma'>,</span> <span class='label'>offset:</span> <span class='id identifier rubyid_offset'>offset</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="add_tracks!-instance_method">
+  
+    #<strong>add_tracks!</strong>(tracks, position: nil)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Adds one or more tracks to a playlist in user&#39;s Spotify account. This method is only available when the current user has granted access to the <strong>playlist-modify-public</strong> and <strong>playlist-modify-private</strong> scopes.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_tracks'>tracks</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span><span class='period'>.</span><span class='id identifier rubyid_search'><span class='object_link'><a href="Track.html#search-class_method" title="RSpotify::Track.search (method)">search</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Know</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='int'>30</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_create_playlist!'>create_playlist!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>my-awesome-playlist</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_add_tracks!'>add_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>       <span class='comment'>#=&gt; 30
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; &quot;Somebody That I Used To Know&quot;
+</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_add_tracks!'>add_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='label'>position:</span> <span class='int'>20</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_tracks'>tracks</span><span class='lbracket'>[</span><span class='int'>20</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; &quot;Somebody That I Used To Know&quot;</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>tracks</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt>, <tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Tracks to be added. Either array of Tracks or strings where each string is a valid spotify track uri. Maximum: 100 per request</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>position</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>, <tt>NilClass</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The position to insert the tracks, a zero-based index. Default: tracks are appended to the playlist</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The tracks added</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 152</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_tracks!'>add_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='label'>position:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_track_uris'>track_uris</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>String</span>
+    <span class='id identifier rubyid_track_uris'>track_uris</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_track_uris'>track_uris</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:uri</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/tracks?uris=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_track_uris'>track_uris</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&amp;position=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_position'>position</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_position'>position</span>
+
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_oauth_post'>oauth_post</span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span><span class='rparen'>)</span>
+  <span class='ivar'>@total</span> <span class='op'>+=</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+  <span class='ivar'>@tracks_cache</span> <span class='op'>=</span> <span class='kw'>nil</span>
+
+  <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span>
+    <span class='ivar'>@snapshot_id</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>snapshot_id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+    <span class='kw'>return</span> <span class='id identifier rubyid_response'>response</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@snapshot_id</span> <span class='op'>=</span> <span class='id identifier rubyid_response'>response</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>snapshot_id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_tracks'>tracks</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="change_details!-instance_method">
+  
+    #<strong>change_details!</strong>(**data)  &#x21d2; <tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Change name and public/private state of playlist in user&#39;s Spotify account. Changing a public playlist requires the <strong>playlist-modify-public</strong> scope; changing a private playlist requires the <strong>playlist-modify-private</strong> scope.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>   <span class='comment'>#=&gt; &quot;Movie Soundtrack Masterpieces&quot;
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_public'>public</span> <span class='comment'>#=&gt; true
+</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_change_details!'>change_details!</span><span class='lparen'>(</span><span class='label'>name:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Movie Tracks</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>public:</span> <span class='kw'>false</span><span class='rparen'>)</span>
+
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span>   <span class='comment'>#=&gt; &quot;Movie Tracks&quot;
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_public'>public</span> <span class='comment'>#=&gt; false</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. The new name for the playlist.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>public</span>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. If true the playlist will be public, if false it will be private.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+190
+191
+192
+193
+194
+195
+196
+197</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 190</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_change_details!'>change_details!</span><span class='lparen'>(</span><span class='op'>**</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_oauth_put'>oauth_put</span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='ivar'>@path</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_field'>field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_instance_variable_set'>instance_variable_set</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>@</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_field'>field</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+  <span class='ivar'>@snapshot_id</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="complete!-instance_method">
+  
+    #<strong>complete!</strong>  &#x21d2; <tt><span class='object_link'><a href="../Object.html" title="Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>It is seldom necessary to use this method explicitly, since RSpotify takes care of it automatically when needed (see <span class='object_link'><a href="Base.html#method_missing-instance_method" title="RSpotify::Base#method_missing (method)">Base#method_missing</a></span>)</p>
+</div>
+  </div>
+
+
+<p>When an object is obtained undirectly, Spotify usually returns a simplified version of it. This method updates it into a full object, with all attributes filled.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span> <span class='op'>=</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_playlists'>playlists</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>@description</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'>#=&gt; nil
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_complete!'>complete!</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_instance_variable_get'>instance_variable_get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>@description</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='comment'>#=&gt; &quot;Iconic soundtracks...&quot;</span></code></pre>
+    
+  </div>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+209
+210
+211</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 209</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_complete!'>complete!</span>
+  <span class='id identifier rubyid_initialize'>initialize</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_resolve_auth_request'><span class='object_link'><a href="../RSpotify.html#resolve_auth_request-class_method" title="RSpotify.resolve_auth_request (method)">resolve_auth_request</a></span></span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='ivar'>@path</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="is_followed_by?-instance_method">
+  
+    #<strong>is_followed_by?</strong>(users)  &#x21d2; <tt>Array&lt;Boolean&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Check if one or more Spotify users are following a specified playlist. Checking if the user is privately following a playlist is only possible if he/she has granted access to the <strong>playlist-read-private</strong> scope.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_user1'>user1</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'><span class='object_link'><a href="User.html#find-class_method" title="RSpotify::User.find (method)">find</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>&lt;some-id&gt;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_user2'>user2</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'><span class='object_link'><a href="User.html#find-class_method" title="RSpotify::User.find (method)">find</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>&lt;some-other-id&gt;</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_is_followed_by?'>is_followed_by?</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id identifier rubyid_user1'>user1</span><span class='comma'>,</span> <span class='id identifier rubyid_user2'>user2</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='comment'>#=&gt; [true, true] (Users publicly following playlist)
+</span>
+<span class='id identifier rubyid_oauth'>oauth</span><span class='op'>-</span><span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="User.html#initialize-instance_method" title="RSpotify::User#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='period'>.</span><span class='id identifier rubyid_env'>env</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>omniauth.auth</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='comment'># (See OAuth section in readme)
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_is_followed_by?'>is_followed_by?</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='id identifier rubyid_oauth'>oauth</span><span class='op'>-</span><span class='id identifier rubyid_user'>user</span><span class='rbracket'>]</span><span class='rparen'>)</span> <span class='comment'>#=&gt; [true] (User publicly or privately following playlist)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>users</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The users to check. Maximum: 5.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Boolean&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 226</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_is_followed_by?'>is_followed_by?</span><span class='lparen'>(</span><span class='id identifier rubyid_users'>users</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_user_ids'>user_ids</span> <span class='op'>=</span> <span class='id identifier rubyid_users'>users</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:id</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/followers/contains?ids=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_user_ids'>user_ids</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_users_credentials'>users_credentials</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_class_variable_defined?'>class_variable_defined?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>@@users_credentials</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+    <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_class_variable_get'>class_variable_get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>@@users_credentials</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_auth_users'>auth_users</span> <span class='op'>=</span> <span class='id identifier rubyid_users'>users</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_user'>user</span><span class='op'>|</span>
+    <span class='id identifier rubyid_users_credentials'>users_credentials</span><span class='lbracket'>[</span><span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span> <span class='kw'>if</span> <span class='id identifier rubyid_users_credentials'>users_credentials</span>
+
+  <span class='kw'>if</span> <span class='id identifier rubyid_auth_users'>auth_users</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_auth_users'>auth_users</span><span class='period'>.</span><span class='id identifier rubyid_any?'>any?</span>
+    <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_oauth_get'>oauth_get</span><span class='lparen'>(</span><span class='id identifier rubyid_auth_users'>auth_users</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+  <span class='kw'>else</span>
+    <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="remove_tracks!-instance_method">
+  
+    #<strong>remove_tracks!</strong>(tracks, snapshot_id: nil)  &#x21d2; <tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Remove one or more tracks from a user’s playlist. Removing from a public playlist requires the <strong>playlist-modify-public</strong> scope; removing from a private playlist requires the <strong>playlist-modify-private</strong> scope.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='comment'># Remove all occurrences of one or more tracks
+</span><span class='id identifier rubyid_love_tracks'>love_tracks</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span><span class='period'>.</span><span class='id identifier rubyid_search'><span class='object_link'><a href="Track.html#search-class_method" title="RSpotify::Track.search (method)">search</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Love</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_remove_tracks!'>remove_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_love_tracks'>love_tracks</span><span class='rparen'>)</span>
+
+<span class='comment'># Remove specific occurrences of one or more tracks
+</span><span class='id identifier rubyid_track'>track</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'><span class='object_link'><a href="Track.html#find-class_method" title="RSpotify::Track.find (method)">find</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>tR3oH...</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_remove_tracks!'>remove_tracks!</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='lbrace'>{</span><span class='label'>track:</span> <span class='id identifier rubyid_track'>track</span><span class='comma'>,</span> <span class='label'>positions:</span> <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>3</span><span class='rbracket'>]</span><span class='rbrace'>}</span><span class='comma'>,</span> <span class='id identifier rubyid_other_track'>other_track</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+
+<span class='comment'># Remove tracks based only on their positions (requires snapshot id)
+</span><span class='id identifier rubyid_positions'>positions</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span><span class='int'>3</span><span class='comma'>,</span><span class='int'>8</span><span class='rbracket'>]</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_remove_tracks!'>remove_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_positions'>positions</span><span class='comma'>,</span> <span class='label'>snapshot_id:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>0ZvtH...</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>tracks</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>,Hash&gt;</tt>, <tt>Array&lt;Integer&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Tracks to be removed. Maximum: 100 per request</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>snapshot_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. The playlist&#39;s snapshot ID against which you want to make the changes.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+305
+306
+307
+308
+309
+310
+311
+312
+313
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+324
+325
+326
+327
+328
+329
+330</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 305</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_remove_tracks!'>remove_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='label'>snapshot_id:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_positions'>positions</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span> <span class='kw'>if</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>Fixnum</span>
+
+  <span class='id identifier rubyid_tracks'>tracks</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_track'>track</span><span class='op'>|</span>
+    <span class='kw'>next</span> <span class='lbrace'>{</span> <span class='label'>uri:</span> <span class='id identifier rubyid_track'>track</span><span class='period'>.</span><span class='id identifier rubyid_uri'>uri</span> <span class='rbrace'>}</span> <span class='kw'>if</span> <span class='id identifier rubyid_track'>track</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span>
+    <span class='lbrace'>{</span>
+      <span class='label'>uri:</span> <span class='id identifier rubyid_track'>track</span><span class='lbracket'>[</span><span class='symbol'>:track</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_uri'>uri</span><span class='comma'>,</span>
+      <span class='label'>positions:</span> <span class='id identifier rubyid_track'>track</span><span class='lbracket'>[</span><span class='symbol'>:positions</span><span class='rbracket'>]</span>
+    <span class='rbrace'>}</span>
+  <span class='kw'>end</span> <span class='kw'>unless</span> <span class='id identifier rubyid_positions'>positions</span>
+
+  <span class='id identifier rubyid_params'>params</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+    <span class='label'>method:</span> <span class='symbol'>:delete</span><span class='comma'>,</span>
+    <span class='label'>url:</span> <span class='const'>URI</span><span class='op'>::</span><span class='id identifier rubyid_encode'>encode</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../RSpotify.html#API_URI-constant" title="RSpotify::API_URI (constant)">API_URI</a></span></span> <span class='op'>+</span> <span class='ivar'>@path</span> <span class='op'>+</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>/tracks</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='comma'>,</span>
+    <span class='label'>headers:</span> <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='symbol'>:oauth_header</span><span class='comma'>,</span> <span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='rparen'>)</span><span class='comma'>,</span>
+    <span class='label'>payload:</span> <span class='id identifier rubyid_positions'>positions</span> <span class='op'>?</span> <span class='lbrace'>{</span> <span class='label'>positions:</span> <span class='id identifier rubyid_positions'>positions</span> <span class='rbrace'>}</span> <span class='op'>:</span> <span class='lbrace'>{</span> <span class='label'>tracks:</span> <span class='id identifier rubyid_tracks'>tracks</span> <span class='rbrace'>}</span>
+  <span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:payload</span><span class='rbracket'>]</span><span class='lbracket'>[</span><span class='symbol'>:snapshot_id</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_snapshot_id'>snapshot_id</span> <span class='kw'>if</span> <span class='id identifier rubyid_snapshot_id'>snapshot_id</span>
+  <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:payload</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:payload</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span>
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'>RestClient</span><span class='op'>::</span><span class='const'>Request</span><span class='period'>.</span><span class='id identifier rubyid_execute'>execute</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='rparen'>)</span>
+
+  <span class='ivar'>@snapshot_id</span> <span class='op'>=</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>snapshot_id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@tracks_cache</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reorder_tracks!-instance_method">
+  
+    #<strong>reorder_tracks!</strong>(range_start, insert_before, **options)  &#x21d2; <tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Reorder a track or a group of tracks in a playlist. Changing a public playlist requires the <strong>playlist-modify-public</strong> scope; changing a private playlist requires the <strong>playlist-modify-private</strong> scope.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_range_start'>range_start</span> <span class='op'>=</span> <span class='int'>10</span>
+<span class='id identifier rubyid_insert_before'>insert_before</span> <span class='op'>=</span> <span class='int'>0</span>
+<span class='comment'># Move the tracks at index 10-14 to the start of the playlist
+</span><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_reorder_tracks!'>reorder_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_range_start'>range_start</span><span class='comma'>,</span> <span class='id identifier rubyid_insert_before'>insert_before</span><span class='comma'>,</span> <span class='label'>range_length:</span> <span class='int'>5</span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>range_start</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The position of the first track to be reordered.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>insert_before</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The position where the tracks should be inserted. To reorder the tracks to the end of the playlist, simply set insert_before to the position after the last track.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>range_length</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. The amount of tracks to be reordered. Default: 1.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>snapshot_id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. The playlist&#39;s snapshot ID against which you want to make the changes.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 346</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reorder_tracks!'>reorder_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_range_start'>range_start</span><span class='comma'>,</span> <span class='id identifier rubyid_insert_before'>insert_before</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/tracks</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+    <span class='label'>range_start:</span> <span class='id identifier rubyid_range_start'>range_start</span><span class='comma'>,</span>
+    <span class='label'>insert_before:</span> <span class='id identifier rubyid_insert_before'>insert_before</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span> <span class='id identifier rubyid_options'>options</span>
+
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_oauth_put'>oauth_put</span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_to_json'>to_json</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_json'>json</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span> <span class='op'>?</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_response'>response</span>
+
+  <span class='ivar'>@snapshot_id</span> <span class='op'>=</span> <span class='id identifier rubyid_json'>json</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>snapshot_id</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span>
+  <span class='ivar'>@tracks_cache</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='kw'>self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="replace_image!-instance_method">
+  
+    #<strong>replace_image!</strong>(image, content_type)  &#x21d2; <tt>NilClass</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Replace the image used to represent a specific playlist. Requires ugc-image-upload scope. Changing a public playlist requires the <strong>playlist-modify-public</strong> scope; changing a private playlist requires the <strong>playlist-modify-private</strong> scope.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_replace_image!'>replace_image!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>SkZJRgABA...</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>image/jpeg</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>image</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Base64 encoded JPEG image data, maximum payload size is 256 KB</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>content_type</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The content type of the request body, e.g. “image/jpeg”</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>NilClass</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>When the image has been provided, Spofity forwards it on to their transcoder service in order to generate the three sizes provided in the playlist’s images object. This operation takes some time, that&#39;s why nothing is returned for this method.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+370
+371
+372
+373
+374
+375
+376
+377</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 370</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_replace_image!'>replace_image!</span><span class='lparen'>(</span><span class='id identifier rubyid_image'>image</span><span class='comma'>,</span> <span class='id identifier rubyid_content_type'>content_type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/images</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_headers'>headers</span> <span class='op'>=</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Content-Type</span><span class='tstring_end'>&#39;</span></span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_content_type'>content_type</span>
+  <span class='rbrace'>}</span>
+  <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_oauth_put'>oauth_put</span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_image'>image</span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>headers:</span> <span class='id identifier rubyid_headers'>headers</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='kw'>nil</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="replace_tracks!-instance_method">
+  
+    #<strong>replace_tracks!</strong>(tracks)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Replace all the tracks in a playlist, overwriting its existing tracks. Changing a public playlist requires the <strong>playlist-modify-public</strong> scope; changing a private playlist requires the <strong>playlist-modify-private</strong> scope.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name</span><span class='rparen'>)</span> <span class='comment'>#=&gt; [&quot;All of Me&quot;, &quot;Wasted Love&quot;, &quot;Love Runs Out&quot;]
+</span><span class='id identifier rubyid_tracks'>tracks</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span><span class='period'>.</span><span class='id identifier rubyid_search'><span class='object_link'><a href="Track.html#search-class_method" title="RSpotify::Track.search (method)">search</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Know</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>limit:</span> <span class='int'>2</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_replace_tracks!'>replace_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name</span><span class='rparen'>)</span> <span class='comment'>#=&gt; [&quot;Somebody That I Used To Know&quot;, &quot;Do I Wanna Know?&quot;]</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>tracks</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The tracks that will replace the existing ones. Maximum: 100 per request</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The tracks that were added.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+390
+391
+392
+393
+394
+395
+396
+397
+398
+399</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 390</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_replace_tracks!'>replace_tracks!</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_track_uris'>track_uris</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:uri</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@path</span><span class='embexpr_end'>}</span><span class='tstring_content'>/tracks?uris=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_track_uris'>track_uris</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_oauth_put'>oauth_put</span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+
+  <span class='ivar'>@total</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span>
+  <span class='ivar'>@tracks_cache</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@snapshot_id</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='id identifier rubyid_tracks'>tracks</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tracks-instance_method">
+  
+    #<strong>tracks</strong>(limit: 100, offset: 0, market: nil)  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns array of tracks from the playlist</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+      <pre class="example code"><code><span class='id identifier rubyid_playlist'>playlist</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="" title="RSpotify::Playlist (class)">Playlist</a></span></span><span class='period'>.</span><span class='id identifier rubyid_find'><span class='object_link'><a href="#find-class_method" title="RSpotify::Playlist.find (method)">find</a></span></span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>wizzler</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>00wHcTN0zQiun4xri9pmvX</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='id identifier rubyid_playlist'>playlist</span><span class='period'>.</span><span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_first'>first</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span> <span class='comment'>#=&gt; &quot;Main Theme from Star Wars - Instrumental&quot;</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>limit</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>100</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Maximum number of tracks to return. Maximum: 100. Default: 100.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>offset</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>0</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The index of the first track to return. Use with limit to get the next set of objects. Default: 0.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>market</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>nil</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Optional. An <a href="https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2" target="_parent" title="ISO 3166-1 alpha-2 country code">ISO 3166-1 alpha-2 country code</a>. Provide this parameter if you want to apply Track Relinking</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File '/usr/share/gems/gems/rspotify-2.8.0/lib/rspotify/playlist.rb', line 255</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_tracks'>tracks</span><span class='lparen'>(</span><span class='label'>limit:</span> <span class='int'>100</span><span class='comma'>,</span> <span class='label'>offset:</span> <span class='int'>0</span><span class='comma'>,</span> <span class='label'>market:</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_last_track'>last_track</span> <span class='op'>=</span> <span class='id identifier rubyid_offset'>offset</span> <span class='op'>+</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>-</span> <span class='int'>1</span>
+  <span class='kw'>if</span> <span class='ivar'>@tracks_cache</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_last_track'>last_track</span> <span class='op'>&lt;</span> <span class='int'>100</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span>
+    <span class='kw'>return</span> <span class='ivar'>@tracks_cache</span><span class='lbracket'>[</span><span class='id identifier rubyid_offset'>offset</span><span class='op'>..</span><span class='id identifier rubyid_last_track'>last_track</span><span class='rbracket'>]</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='ivar'>@href</span><span class='embexpr_end'>}</span><span class='tstring_content'>/tracks?limit=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_limit'>limit</span><span class='embexpr_end'>}</span><span class='tstring_content'>&amp;offset=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_offset'>offset</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&amp;market=</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_market'>market</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span> <span class='kw'>if</span> <span class='id identifier rubyid_market'>market</span>
+  <span class='id identifier rubyid_response'>response</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_resolve_auth_request'><span class='object_link'><a href="../RSpotify.html#resolve_auth_request-class_method" title="RSpotify.resolve_auth_request (method)">resolve_auth_request</a></span></span><span class='lparen'>(</span><span class='ivar'>@owner</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
+
+  <span class='id identifier rubyid_json'>json</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span> <span class='op'>?</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_response'>response</span><span class='rparen'>)</span> <span class='op'>:</span> <span class='id identifier rubyid_response'>response</span>
+  <span class='id identifier rubyid_tracks'>tracks</span> <span class='op'>=</span> <span class='id identifier rubyid_json'>json</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>items</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_i'>i</span><span class='op'>|</span> <span class='id identifier rubyid_i'>i</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>track</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+  <span class='ivar'>@tracks_added_at</span> <span class='op'>=</span> <span class='id identifier rubyid_hash_for'>hash_for</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>added_at</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_added_at'>added_at</span><span class='op'>|</span>
+    <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span> <span class='id identifier rubyid_added_at'>added_at</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@tracks_added_by</span> <span class='op'>=</span> <span class='id identifier rubyid_hash_for'>hash_for</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>added_by</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_added_by'>added_by</span><span class='op'>|</span>
+    <span class='const'><span class='object_link'><a href="User.html" title="RSpotify::User (class)">User</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="User.html#initialize-instance_method" title="RSpotify::User#initialize (method)">new</a></span></span> <span class='id identifier rubyid_added_by'>added_by</span>
+  <span class='kw'>end</span>
+
+  <span class='ivar'>@tracks_is_local</span> <span class='op'>=</span> <span class='id identifier rubyid_hash_for'>hash_for</span><span class='lparen'>(</span><span class='id identifier rubyid_tracks'>tracks</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>is_local</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_is_local'>is_local</span><span class='op'>|</span>
+    <span class='id identifier rubyid_is_local'>is_local</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_tracks'>tracks</span><span class='period'>.</span><span class='id identifier rubyid_map!'>map!</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_t'>t</span><span class='op'>|</span> <span class='const'><span class='object_link'><a href="Track.html" title="RSpotify::Track (class)">Track</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="Track.html#initialize-instance_method" title="RSpotify::Track#initialize (method)">new</a></span></span> <span class='id identifier rubyid_t'>t</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>track</span><span class='tstring_end'>&#39;</span></span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+  <span class='ivar'>@tracks_cache</span> <span class='op'>=</span> <span class='id identifier rubyid_tracks'>tracks</span> <span class='kw'>if</span> <span class='id identifier rubyid_limit'>limit</span> <span class='op'>==</span> <span class='int'>100</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_offset'>offset</span> <span class='op'>==</span> <span class='int'>0</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_response'>response</span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="../RSpotify.html" title="RSpotify (module)">RSpotify</a></span></span><span class='period'>.</span><span class='id identifier rubyid_raw_response'><span class='object_link'><a href="../RSpotify.html#raw_response-class_method" title="RSpotify.raw_response (method)">raw_response</a></span></span>
+  <span class='id identifier rubyid_tracks'>tracks</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Mar 23 23:24:55 2020 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.24 (ruby-2.6.5).
+</div>
+
+    </div>
+  </body>
+</html>

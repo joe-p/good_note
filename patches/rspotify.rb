@@ -1,6 +1,13 @@
 module Patches
+
+  # Contains patches for classes in the RSpotify gem
   module RSpotifyPatches
+  
+    # Contains patches for RSpotify::Playlist instance methods
     module PlaylistPatches
+      
+      # New method that gets all the tracks in a playlist, even if it exceeds the API limit of 100
+      # @return [Array<RSpotify::Tracks>]
       def all_tracks
         tracks = []
 
@@ -17,8 +24,13 @@ end
 
 module Patches
   module RSpotifyPatches
+
+    # Contains patches for RSpotify::AudioFeatures class methods
     module AudioFeaturesClassPatches
 
+      # Patched for two new functionalities.
+      # 1. It can take an RSpotify::Track instance (or array of RSpotify::Track instances) as an input (opposed to just the id)
+      # 2. It will get the audio features for all tracks, even if the count exceeds the API limit of 100
       def find(param)
         if param.is_a? RSpotify::Track
           param = param.id

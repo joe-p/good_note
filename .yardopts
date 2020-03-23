@@ -1,0 +1,7 @@
+./*.rb
+--type-name-tag endpoint:"Endpoints" 
+--output-dir ./public/docs
+--
+./**/*.rb
+/usr/share/gems/gems/rspotify-2.8.0/**/*.rb
+
