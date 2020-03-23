@@ -1,3 +1,3 @@
-require "./music_therapy"
+require "./good_note"
 
-run MusicTherapy
+run GoodNote

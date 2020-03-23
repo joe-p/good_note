@@ -7,7 +7,7 @@ require_relative 'models'
 require_relative 'routes'
 require_relative 'patches'
 
-class MusicTherapy < Roda
+class GoodNote < Roda
 
   plugin :json, classes: [Array, Hash, Sequel::Model]
   plugin :public

@@ -3,7 +3,7 @@ class User < Sequel::Model(DB[:users])
 
   class << self
     def authenticate_via_spotify(code)
-      b64 = Base64.strict_encode64("#{MusicTherapy::CLIENT_ID}:#{MusicTherapy::CLIENT_SECRET}")
+      b64 = Base64.strict_encode64("#{GoodNote::CLIENT_ID}:#{GoodNote::CLIENT_SECRET}")
       
       api_conn = Faraday.new("https://accounts.spotify.com/api/")
  
@@ -11,7 +11,7 @@ class User < Sequel::Model(DB[:users])
         req.body = {
           "grant_type" => "authorization_code",
           "code" => code,
-          "redirect_uri" => "#{MusicTherapy::HOSTNAME}/spotify/auth/callback"
+          "redirect_uri" => "#{GoodNote::HOSTNAME}/spotify/auth/callback"
         }
 
         req.headers = {"Authorization" => "Basic #{b64}"}

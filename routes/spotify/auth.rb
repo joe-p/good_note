@@ -1,4 +1,4 @@
-class MusicTherapy < Roda
+class GoodNote < Roda
   plugin :hash_routes
 
   hash_path :spotify, "/auth" do |r|
