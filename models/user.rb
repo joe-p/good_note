@@ -24,7 +24,9 @@ class User < Sequel::Model(DB[:users])
       me_res = Faraday.new.get('https://api.spotify.com/v1/me', nil, {"Authorization" => "Bearer #{token}"})
       me_hash = JSON.parse(me_res.body)
 
-      [ User.find_or_create( spotify_id: me_hash["id"] ), auth_info ]
+      current_user = User.find_or_create( spotify_id: me_hash["id"] )
+
+      [ current_user , auth_info ]
     end
 
   end

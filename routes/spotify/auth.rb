@@ -3,9 +3,21 @@ class MusicTherapy < Roda
 
   hash_path :spotify, "/auth" do |r|
     r.get do
+      
+      scopes = [
+        "user-read-private", 
+        "user-read-email", 
+        "user-library-read", 
+        "user-top-read",
+        "user-read-recently-played",
+        "playlist-read-private",
+        "playlist-read-collaborative"
+      ]
+      
       # Bring user to Spotify login page
       r.redirect (
         "https://accounts.spotify.com/authorize?" +
+        "scope=#{scopes.join("%20")}&" +
         "client_id=#{CLIENT_ID}&" +
         "response_type=code&" +
         "state=test_state&" +
