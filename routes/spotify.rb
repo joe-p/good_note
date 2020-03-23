@@ -1,7 +1,7 @@
 require_relative 'spotify/auth'
 require_relative 'spotify/analyze'
 
-class MusicTherapy < Roda
+class GoodNote < Roda
   plugin :hash_routes
 
   def session_access_token(r)

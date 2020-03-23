@@ -47,7 +47,7 @@ class RSpotify::AudioFeatures
   end
 end
 
-class MusicTherapy < Roda
+class GoodNote < Roda
 
   plugin :hash_routes
 
