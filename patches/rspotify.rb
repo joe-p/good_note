@@ -2,7 +2,6 @@ module Patches
   module RSpotifyPatches
     module PlaylistPatches
       def all_tracks
-
         tracks = []
 
         ( 0..(self.total / 100) ).each do |x|
@@ -54,4 +53,4 @@ class RSpotify::Playlist
   prepend Patches::RSpotifyPatches::PlaylistPatches
 end
 
-RSpotify.send :prepend, Patches::RSpotifyPatches::AudioFeaturesClassPatches
+RSpotify::AudioFeatures.singleton_class.send :prepend, Patches::RSpotifyPatches::AudioFeaturesClassPatches
