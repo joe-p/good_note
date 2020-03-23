@@ -64,6 +64,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
+    yard (0.9.24)
 
 PLATFORMS
   ruby
@@ -78,6 +79,7 @@ DEPENDENCIES
   sqlite3
   thin
   tilt
+  yard
 
 RUBY VERSION
    ruby 2.6.5p114
