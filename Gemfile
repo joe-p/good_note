@@ -1,8 +1,12 @@
 source "https://rubygems.org"
 ruby "2.6.5"
 
-gem "rspotify"
+gem "byebug"
+gem "faraday"
+gem "sqlite3"
+gem "sequel"
 gem "rerun"
 gem "roda"
 gem "thin"
 gem "tilt"
+gem "rspotify"

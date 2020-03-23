@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    byebug (11.1.1)
     daemons (1.3.1)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -10,7 +11,7 @@ GEM
     faraday (1.0.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.12.2)
-    hashie (3.6.0)
+    hashie (4.1.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     jwt (2.2.1)
@@ -30,8 +31,8 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (1.9.0)
-      hashie (>= 3.4.6, < 3.7.0)
+    omniauth (1.9.1)
+      hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
     omniauth-oauth2 (1.5.0)
       oauth2 (~> 1.1)
@@ -47,12 +48,14 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    roda (3.29.0)
+    roda (3.30.0)
       rack
     rspotify (2.8.0)
       addressable (~> 2.5.2)
       omniauth-oauth2 (~> 1.5.0)
       rest-client (~> 2.0.2)
+    sequel (5.30.0)
+    sqlite3 (1.4.2)
     thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -66,9 +69,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
+  faraday
   rerun
   roda
   rspotify
+  sequel
+  sqlite3
   thin
   tilt
 
