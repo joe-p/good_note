@@ -15,12 +15,15 @@ class GoodNote < Roda
   
   hash_branch :spotify, "analyze" do |r|
     r.is "song", String do |id|
-      RSpotify::AudioFeatures.find(id).valence.to_s
+      {valence: RSpotify::AudioFeatures.find(id).valence}
     end
 
     r.is "playlist", String do |id|
       pl = RSpotify::Playlist.find_by_id id
       RSpotify::AudioFeatures.find pl.all_tracks 
+
+      # ... code to get averge goes here
+      # {average_valence: whatever_the_average_valence_is }
     end
 
   end
