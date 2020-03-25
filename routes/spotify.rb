@@ -3,10 +3,7 @@ require_relative 'spotify/analyze'
 
 class GoodNote < Roda
   plugin :hash_routes
-
-  def session_access_token(r)
-    r.session["auth_info"]["access_token"]
-  end
+  plugin :request_headers
 
   def rspotify_user(token)
     me_res = Faraday.new.get('https://api.spotify.com/v1/me', nil, {"Authorization" => "Bearer #{token}"})
@@ -16,6 +13,14 @@ class GoodNote < Roda
     init_hash["credentials"] = { "token" => token }       
 
     RSpotify::User.new init_hash 
+  end
+
+  def access_token(r)
+    if r.headers["Authorization"]
+      r.headers["Authorization"].split.last
+    elsif r.session["auth_info"]
+      r.session["auth_info"]["access_token"]
+    end
   end
 
   hash_branch "spotify" do |r|
