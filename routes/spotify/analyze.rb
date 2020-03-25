@@ -20,10 +20,12 @@ class GoodNote < Roda
 
     r.is "playlist", String do |id|
       pl = RSpotify::Playlist.find_by_id id
-      RSpotify::AudioFeatures.find pl.all_tracks 
+      valences = RSpotify::AudioFeatures.find(pl.all_tracks).map do |t|
+        t.valence
+      end
+      
+      {average_valence: valences.sum(0.0)/valences.size}
 
-      # ... code to get averge goes here
-      # {average_valence: whatever_the_average_valence_is }
     end
 
   end
