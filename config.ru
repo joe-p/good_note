@@ -1,3 +1,3 @@
-require "./good_note"
+require './good_note'
 
 run GoodNote
