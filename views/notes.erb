@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form method='POST' id="client_form">
+    <select name="client" id="client_list" onchange="this.form.submit()">
+        <% @clients.each do |client| %>
+            <% id = client[:spotify_id] %>
+            <option value=<%=id%> <%='selected' if @current_client == id%> > <%=id%> </option>
+        <% end %>
+    </select>
+
+    <input type="date" id="date" name="date" value="<%= @selected_date %>" onchange="this.form.submit()">
+</form>
+
+<form method='POST' id="notes_form">
+    <textarea id="notes" name="notes" form="notes_form"></textarea>
+    <input type="submit" value="Save Notes">
+</form>
+
+</body>
+
+<script>
+
+</script>
+</html>

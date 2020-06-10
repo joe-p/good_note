@@ -21,8 +21,10 @@ class GoodNote < Roda
     r.on 'therapist' do
       r.post do
         id = r.params['id']
+        therapist = User[spotify_id: id]
 
-        if User[spotify_id: id][:is_therapist]
+        if therapist[:is_therapist]
+          current_user[:therapist] = id
           r.redirect 'therapist'
         else
           r.redirect "invalid?id=#{id}"
