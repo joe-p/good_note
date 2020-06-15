@@ -8,6 +8,10 @@ class GoodNote < Roda
       render 'home'
     end
 
+    r.on 'activity' do
+      render 'activity'
+    end
+
     r.on 'notes' do
       r.post do
         r.redirect "notes?client=#{r.params['client']}&date=#{r.params['date']}"
