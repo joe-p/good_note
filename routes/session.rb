@@ -5,7 +5,6 @@ class GoodNote < Roda
   hash_branch 'session' do |r|
     r.on 'notes' do
       r.post do
-        puts r.params
         r.redirect "notes?client=#{r.params['client']}&date=#{r.params['date']}"
       end
 
