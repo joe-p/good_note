@@ -11,7 +11,9 @@ class GoodNote < Roda
         "user-top-read",
         "user-read-recently-played",
         "playlist-read-private",
-        "playlist-read-collaborative"
+        "playlist-read-collaborative",
+        "playlist-modify-public",
+        "playlist-modify-private"
       ]
       
       # Bring user to Spotify login page
