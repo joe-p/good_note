@@ -1,0 +1,25 @@
+body{
+  padding-top:60px;
+ }
+.nav-bar {
+  background-color: black;
+  overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav-button {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.nav-text {
+  color: white;
+  font-size: 15px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
