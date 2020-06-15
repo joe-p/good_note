@@ -10,7 +10,6 @@ class GoodNote < Roda
   hash_branch :spotify, 'rspotify' do |r|
     r.get do
       rspotify_user(access_token(r)).instance_variables_hash
->>>>>>> 96165fb8ea22b10b889d95904e2e969976cdd4fe
     end
   end
 
