@@ -1,5 +1,6 @@
 body{
-  padding-top:60px;
+  padding-top:20px;
+  margin: 0px;
  }
 .nav-bar {
   background-color: black;
@@ -22,4 +23,10 @@ body{
   font-size: 15px;
   padding: 14px 16px;
   text-decoration: none;
+}
+#home {
+  text-align: center;
+  padding: 250px 212px;
+  height: 100%;
+  line-height: 5px;
 }
