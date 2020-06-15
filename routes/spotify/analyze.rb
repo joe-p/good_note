@@ -1,32 +1,25 @@
 require 'rspotify'
 
-
 class GoodNote < Roda
-
   plugin :hash_routes
   plugin :static, ["/images", "/css", "/js"]
   plugin :render
 
-  RSpotify::authenticate ENV["CLIENT_ID"], ENV["CLIENT_SECRET"]
+  RSpotify.authenticate ENV['CLIENT_ID'], ENV['CLIENT_SECRET']
 
-  hash_branch :spotify, "rspotify" do |r|
+  hash_branch :spotify, 'rspotify' do |r|
     r.get do
-      rspotify_user( access_token(r) ).instance_variables_hash
+      rspotify_user(access_token(r)).instance_variables_hash
+>>>>>>> 96165fb8ea22b10b889d95904e2e969976cdd4fe
     end
   end
 
-  hash_branch :spotify, "test" do |r|
-    r.get do
-      view("test")
-    end
-  end
-  
-  hash_branch :spotify, "analyze" do |r|
-    r.is "song", String do |id|
-      {valence: RSpotify::AudioFeatures.find(id).valence}
+  hash_branch :spotify, 'analyze' do |r|
+    r.is 'song', String do |id|
+      { valence: RSpotify::AudioFeatures.find(id).valence }
     end
 
-    r.is "playlist", String do |id|
+    r.is 'playlist', String do |id|
       pl = RSpotify::Playlist.find_by_id id
 
       valences = RSpotify::AudioFeatures.find(pl.all_tracks).map do |t|
