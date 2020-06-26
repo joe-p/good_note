@@ -7,6 +7,9 @@
   <title>GoodNote App</title>
   <link rel="stylesheet" href="/docs/css/nav.css">
 
+    <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
+    <script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+
 </head>
 <body>
 
@@ -30,7 +33,7 @@
 </form>
 
 <form method='POST' id="notes_form">
-    <textarea id="notes" name="notes" form="notes_form"></textarea>
+    <textarea id="notes" name="notes" form="notes_form" style="width: 90%; height: 100px;"></textarea>
     <input type="submit" value="Save Notes">
 </form>
 
