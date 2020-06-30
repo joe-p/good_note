@@ -3,14 +3,17 @@ class GoodNote < Roda
 
   hash_path :spotify, '/auth' do |r|
     r.get do
-      scopes = %w[
-        user-read-private
-        user-read-email
-        user-library-read
-        user-top-read
-        user-read-recently-played
-        playlist-read-private
-        playlist-read-collaborative
+      
+      scopes = [
+        "user-read-private", 
+        "user-read-email", 
+        "user-library-read", 
+        "user-top-read",
+        "user-read-recently-played",
+        "playlist-read-private",
+        "playlist-read-collaborative",
+        "playlist-modify-public",
+        "playlist-modify-private"
       ]
 
       # Bring user to Spotify login page
