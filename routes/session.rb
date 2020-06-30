@@ -15,7 +15,7 @@ class GoodNote < Roda
         date = r.params['date']
 
         if r.params['notes']
-          Note.update_or_create(
+          note = Note.update_or_create(
             {
               therapist_id: therapist_id,
               patient_id: client_id,
@@ -23,6 +23,8 @@ class GoodNote < Roda
             },
             content: r.params['notes']
           )
+
+          note.delete if note[:content].empty?
         end
 
         r.redirect "notes?client=#{r.params['client']}&date=#{r.params['date']}"
