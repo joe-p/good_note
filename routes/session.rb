@@ -26,7 +26,7 @@ class GoodNote < Roda
 
           note.delete if note[:content].empty?
         end
-
+        
         r.redirect "notes?client=#{r.params['client']}&date=#{r.params['date']}"
       end
 
