@@ -49,8 +49,10 @@ class GoodNote < Roda
       end }
     end
 
-    r.is "filter", String do |seed_genre|
-      recommendations = RSpotify::Recommendations.generate(seed_genres: [seed_genre]).tracks.map do |t|
+    r.is "filter", String, Integer, Integer, Integer do |seed_genre, target_valence, target_energy, target_tempo|
+      target_valence /= 100
+      target_tempo /= 100
+      recommendations = RSpotify::Recommendations.generate(seed_genres: [seed_genre], target_valence: target_valence, target_energy: target_energy, target_tempo: target_tempo).tracks.map do |t|
         t.name
       end
       {recommendations: recommendations}
