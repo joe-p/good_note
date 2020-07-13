@@ -55,6 +55,11 @@ class GoodNote < Roda
       recommendations = RSpotify::Recommendations.generate(seed_genres: [seed_genre], target_valence: target_valence, target_energy: target_energy, target_tempo: target_tempo).tracks.map do |t|
         t.name
       end
+      
+      # Add option asking if the user wants to create a playlist
+      pl2 = rspotify_user( access_token(r) ).create_playlist!('recs')
+      pl2.add_tracks!(recommendations)
+      
       {recommendations: recommendations}
     end
   end
