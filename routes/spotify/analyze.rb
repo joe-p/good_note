@@ -43,7 +43,17 @@ class GoodNote < Roda
 
     r.is 'filter', String do |seed_genre|
       recommendations = RSpotify::Recommendations.generate(seed_genres: [seed_genre]).tracks.map(&:name)
-      { recommendations: recommendations }
+
+      response = { recommendations: recommendations }
+
+      Activity.create(
+        patient_id: rspotify_user(access_token(r)).id,
+        response: response.to_s,
+        request: "filter/#{seed_genre}",
+        time: Time.now
+      )
+
+      response
     end
   end
 end
