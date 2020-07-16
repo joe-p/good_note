@@ -54,5 +54,10 @@ class GoodNote < Roda
         render 'notes'
       end
     end
+
+    r.on 'login' do
+      render 'login'
+    end
+
   end
 end
