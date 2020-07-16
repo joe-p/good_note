@@ -41,19 +41,35 @@ class GoodNote < Roda
       { recommendations: recommendations.map(&:name) }
     end
 
-    r.is 'filter', String do |seed_genre|
-      recommendations = RSpotify::Recommendations.generate(seed_genres: [seed_genre]).tracks.map(&:name)
+    r.is 'recommendations' do
+      puts r.params
 
-      response = { recommendations: recommendations }
+      seed_genres = r.params['genres']&.split(',') || []
+      seed_artists = r.params['artists']&.split(',') || []
+      seed_tracks = r.params['tracks']&.split(',') || []
+
+      recommendations_object = RSpotify::Recommendations.generate(
+        seed_genres: seed_genres,
+        seed_artists: seed_artists,
+        seed_tracks: seed_tracks
+      )
+      
+      recommendation_hash = {}
+
+      recommendations_object.tracks.each do |t|
+        recommendation_hash[t.artists.first.name] ||= {}
+        recommendation_hash[t.artists.first.name][t.name] = t.external_urls
+      end
+
 
       Activity.create(
         patient_id: rspotify_user(access_token(r)).id,
-        response: response.to_s,
-        request: "filter/#{seed_genre}",
+        response: recommendation_hash.to_s,
+        request: r.path + '?' + r.query_string,
         time: Time.now
       )
 
-      response
+      recommendation_hash
     end
   end
 end
