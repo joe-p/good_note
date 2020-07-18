@@ -2072,7 +2072,11 @@
 /* Form */
 
 	form {
-		margin: 0 0 2em 0;
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		max-width: 1024px;
+		margin: 25px auto 25px;
 	}
 
 	label {
@@ -2272,7 +2276,7 @@
   margin: auto;
 }
 
-form.login-form {
+.form {
 	position: relative;
   z-index: 1;
   background: #FFFFFF;
@@ -2283,7 +2287,7 @@ form.login-form {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-form.login-form input {
+.form input {
 	outline: 0;
   background: #f2f2f2;
   width: 100%;
@@ -2292,6 +2296,16 @@ form.login-form input {
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .register-form {
+	display: none;
 }
 
 /* Icon */
@@ -3134,7 +3148,7 @@ form.login-form input {
 		background-attachment: fixed;
 		background-image: url("../images/overlay.png"), url("../images/listening_to_music4.jpg");
 		background-position: center top;
-		background-size: cover;
+		background-size: contain;
 		line-height: 1.75;
 		text-align: center;
 	}
