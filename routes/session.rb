@@ -9,6 +9,11 @@ class GoodNote < Roda
     end
 
     r.on 'activity' do
+      # TODO: Filter for clients of logged in therapist
+      client_ids = User.all.map(&:spotify_id).compact
+
+      @activities = Activity.where([[:patient_id, client_ids]])
+
       render 'activity'
     end
 
