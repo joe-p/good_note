@@ -22,23 +22,12 @@
 		</nav>
 	</header>
 
-  <div class="main">
-
-    <table>
-      <tr>
-        <th>Time</th>
-        <th>Patient</th>
-        <th>Request</th>
-        <th>Response</th>
-      </tr>
-
-      <% @activities.each do |a| %>
-        <tr>
-          <td><%= a.time %></td>
-          <td><%= a.patient_id %></td>
-          <td><%= a.request %></td>
-          <td><%= a.response %></td>
-        </tr>
-      <% end %>
-    </table>
+  <div class="login-page">
+    <form class="login-form">
+      <input placeholder="Username">
+      <input placeholder="Password">
+      <button>Login</button>
+    </form>
   </div>
+
+  </body>
