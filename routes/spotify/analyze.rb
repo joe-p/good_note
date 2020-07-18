@@ -42,25 +42,26 @@ class GoodNote < Roda
     end
 
     r.is 'recommendations' do
-      puts r.params
 
-      seed_genres = r.params['genres']&.split(',') || []
-      seed_artists = r.params['artists']&.split(',') || []
-      seed_tracks = r.params['tracks']&.split(',') || []
+      parameters = {}
 
-      recommendations_object = RSpotify::Recommendations.generate(
-        seed_genres: seed_genres,
-        seed_artists: seed_artists,
-        seed_tracks: seed_tracks
-      )
-      
+      parameters[:seed_genres] = r.params['genres'].split(',') if r.params['genres']
+      parameters[:seed_artists] = r.params['artists'].split(',') if r.params['artists']
+      parameters[:seed_tracks] = r.params['tracks'].split(',') if r.params['tracks']
+      parameters[:target_valence] = r.params['valence'].to_f if r.params['valence']
+      parameters[:target_tempo] = r.params['tempo'].to_f if r.params['tempo']
+      parameters[:target_energy] = r.params['energy'].to_f if r.params['energy']
+
+      puts parameters # output to STDOUT for debugging purposes
+
+      recommendations_object = RSpotify::Recommendations.generate(parameters)
+
       recommendation_hash = {}
 
       recommendations_object.tracks.each do |t|
         recommendation_hash[t.artists.first.name] ||= {}
         recommendation_hash[t.artists.first.name][t.name] = t.external_urls
       end
-
 
       Activity.create(
         patient_id: rspotify_user(access_token(r)).id,
