@@ -17,28 +17,30 @@
 				<li><a href="home">Home</a></li>
 				<li><a href="activity">Activity</a></li>
 				<li><a href="notes">Notes</a></li>
-        <li><a href="login">Login</a></li>
+        <li><a href="login">Connect</a></li>
 			</ul>
 		</nav>
 	</header>
 
   <div class="main">
-
-    <table>
+    <table style="width:75%; margin-left: auto; margin-right: auto">
+      <caption>Client Activity</caption>
       <tr>
-        <th>Time</th>
-        <th>Patient</th>
-        <th>Request</th>
-        <th>Response</th>
+        <th>Client Name</th>
+        <th>Most Recent Activity</th>
+        <th>Date</th>
       </tr>
-
+      
       <% @activities.each do |a| %>
-        <tr>
-          <td><%= a.time %></td>
-          <td><%= a.patient_id %></td>
-          <td><%= a.request %></td>
-          <td><%= a.response %></td>
-        </tr>
-      <% end %>
+      <tr>
+        <td><%= a.patient_id %></td>
+        <!-- <%= activity=a.request %> -->
+        <!-- <%= activity_out=activity.partition('/').last %> -->
+        <td><%= activity_out %></td>
+			  <td><%= a.time %></td>
+      </tr>
+      <%end%>
     </table>
   </div>
+
+</body>

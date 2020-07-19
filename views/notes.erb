@@ -20,7 +20,7 @@
 				<li><a href="home">Home</a></li>
 				<li><a href="activity">Activity</a></li>
 				<li><a href="notes">Notes</a></li>
-                <li><a href="login">Login</a></li>
+                <li><a href="login">Connect</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -49,7 +49,7 @@
 
 <form method='POST' class="notes_form">
     <textarea id="notes" name="notes" form="notes_form" style="width: 100%; height: 360px;"><%= @note_content %></textarea>
-    <input type="submit" value="Save Notes">
+    <button type="submit" class="special">Save Note</button>
 </form>
 
 
