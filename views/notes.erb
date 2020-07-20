@@ -29,33 +29,25 @@
     <div class="row uniform 50%">
         <div class="6u 12u$(xsmall)">
             <div class="select-wrapper">
-                <select name="client" id="client_list" onchange="this.form.submit()">
+                <select required name="client" id="client_list" onchange="this.form.submit()">
                     <% @clients.each do |client| %>
                         <% id = client[:spotify_id] %>
                         <option value=<%=id%> <%='selected' if @current_client == id%> > <%=id%> </option>
                     <% end %>
                 </select>
-                </div>
+            </div>
         </div>
         <div class="6u$ 12u$(xsmall)">
             <input type="date" id="date" name="date" value="<%= @selected_date %>" onchange="this.form.submit()">
         </div>
+        <div class="12u$">
+            <textarea name="notes" style="width: 100%; height: 360px;"><%= @note_content %></textarea>
+        </div>
     </div>
-</form>
-
-<div id="mood-tracking">
-
-</div>
-
-<form method='POST' class="notes_form">
-    <textarea id="notes" name="notes" form="notes_form" style="width: 100%; height: 360px;"><%= @note_content %></textarea>
-    <button type="submit" class="special">Save Note</button>
+    <input type="submit" class="special" value="Save Note">
 </form>
 
 
 </body>
 
-<script>
-
-</script>
 </html>
