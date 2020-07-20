@@ -13,6 +13,8 @@ GEM
     eventmachine (1.2.7)
     faraday (1.0.0)
       multipart-post (>= 1.2, < 3)
+    faraday_middleware (1.0.0)
+      faraday (~> 1.0)
     ffi (1.12.2)
     hashie (4.1.0)
     http-cookie (1.0.3)
@@ -106,6 +108,7 @@ DEPENDENCIES
   byebug
   dotenv
   faraday
+  faraday_middleware
   rerun
   roda
   rspec
